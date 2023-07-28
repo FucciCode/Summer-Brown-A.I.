@@ -1,0 +1,31 @@
+Introduction. What is the problem or task you are trying to solve? What methods are you using to solve them? (This may be answered by the assignment itself, but write it in your own words.)
+        Hello! Welcome to our solution for the game “Tetris”, TetrAI. The task at hand is simple on paper, but complex in nature: Create an artificially intelligent agent that is able to play Tetris proficiently.
+
+
+
+Methods. What implementation choices did you make? How did you decide on those choices? How did you evaluate or test your system?
+            Once we had our problem at hand we needed a way to solve the problem, which is where TetrAI comes into play. 
+            TetrAI is an amalgamation of Python libraries, OpenAi Gymnasium, and a few lines of code. We decided on using these 
+            tools specifically because it would allow us to get straight to the main objective, without spending valuable time creating 
+            our own personal game to play or AI neural network. When TetrAI was born, he lacked finesse, precision and any form of strategy. 
+            However as time went on, he slowly began to formulate his own way of playing Tetris; losing as fast as possible. From this point we 
+            continued to let TetrAI play millions of Tetris instances so that he could learn a fundamental strategy. Furthermore, after every 
+            couple million instances, we would set TetrAI to human view, allowing us to evaluate the situation and his skill level.
+
+
+Results. Did your system work? How well? Provide tables / numerical results if appropriate.
+           Our system did not work completely as intended. Initially, we stated that we wanted to have the AI play Tetris proficiently, and 
+           TetrAI is only doing half of that. Currently, we are able to play Tetris, but TetrAI isn’t capable of forming his own strategies… 
+           yet. To overcome this challenge, we made a few modifications to the source code. The first change we made was how the AI sees the Tetris 
+           pieces (Tetromino). Originally the AI saw the Tetrinominos in full color, which slows down the program since it takes time to render in all 
+           of the colors, so we changed the vision mode to “Grayscale”. However, after further research we found out about “RAM” vision mode. This was 
+           a vision mode that stripped the Tetrinominos to their bare fundamental shapes, allowing for the program to run at an optimal speed. Secondly, 
+           we switched the base algorithm from A2C (Advantage Actor Critic) to a PPO (Proximal Policy Optimization) algorithm. The advantage of this is that
+           PPO requires less data and runs quicker than A2C.
+
+
+Discussion. Based on your results, were your methods and choices appropriate for the task? What would you do differently next time? Or if you had more time? 
+Are there any ethical implications of your system that others should be aware of?
+    Based on our results, our methods had strong potential, however due to the lack of computing power and time, we were able to see 
+    ideal results. Which is why we are going to continue this project beyond the Brown Summer AI course and into the school year. And no, this
+    TetrAI isn’t a threat to world's safety.

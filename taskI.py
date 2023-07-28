@@ -6,4 +6,3 @@ def hoursToMinutes():
     print(int(userMinutes))
 
 hoursToMinutes()
-
